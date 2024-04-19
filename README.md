@@ -65,9 +65,6 @@
 # add
 npx nuxi add layout default
 npx nuxi add page index
-
-# update
-npx nuxi upgrade
 ```
 
 ## git
@@ -126,12 +123,17 @@ npx nuxi upgrade
 ## update
 
 ```sh
+# update nuxt
 npx nuxi upgrade
 
+# update package
+npm update
 npx taze -w
 
+# find outdated
 npm outdated
 
+# type check
 npx nuxi typecheck
 ```
 
