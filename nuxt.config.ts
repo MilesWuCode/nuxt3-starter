@@ -29,4 +29,9 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light',
   },
+
+  tailwindcss: {
+    // https://tailwindcss.nuxtjs.org/getting-started/configuration
+    editorSupport: true,
+  },
 })

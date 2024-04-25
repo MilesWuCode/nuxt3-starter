@@ -2,6 +2,16 @@
   // Enable ESlint flat config support
   // https://eslint.nuxt.com/packages/module#vs-code
   "eslint.experimental.useFlatConfig": true,
+  // https://ui.nuxt.com/getting-started/installation#intellisense
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  // https://ui.nuxt.com/getting-started/installation#intellisense
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  // https://ui.nuxt.com/getting-started/installation#intellisense
+  // "tailwindCSS.experimental.configFile": "tailwind.config.ts",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
