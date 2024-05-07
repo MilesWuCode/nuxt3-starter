@@ -27,10 +27,10 @@
 
 ## ui
 
-- @nuxt/ui
+- daisyui
 
   ```sh
-  npm i @nuxt/ui
+  npm i daisyui
   ```
 
 ## store

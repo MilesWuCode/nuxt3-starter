@@ -5,8 +5,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/test-utils/module',
-    '@nuxt/ui',
     '@nuxtjs/svg-sprite',
+    '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
   ],
 
@@ -24,10 +24,6 @@ export default defineNuxtConfig({
       },
       titleTemplate: '%s - Nuxt3 Starter',
     },
-  },
-
-  colorMode: {
-    preference: 'light',
   },
 
   tailwindcss: {
