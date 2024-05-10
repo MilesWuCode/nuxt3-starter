@@ -2,10 +2,11 @@
 
 <template>
   <div>
-    <h1>Test</h1>
+    <a id="test" class="block scroll-mt-[68px] text-3xl" href="#test">Test</a>
+
     <Increase />
 
-    <FetchData :id="1123" />
+    <FetchData :id="123" />
 
     <!-- example -->
     <ErrorBoundary>

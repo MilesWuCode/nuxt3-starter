@@ -19,6 +19,7 @@ const links = [
   <div class="navbar bg-base-100">
     <div class="flex-1">
       <a class="btn btn-ghost text-xl">daisyUI</a>
+      <label for="drawer" class="lg:hidden">Open drawer</label>
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1">
@@ -26,7 +27,7 @@ const links = [
         <li>
           <details>
             <summary>Parent</summary>
-            <ul class="bg-base-100 rounded-t-none p-2">
+            <ul class="rounded-t-none bg-base-100 p-2">
               <li><a>Link 1</a></li>
               <li><a>Link 2</a></li>
             </ul>

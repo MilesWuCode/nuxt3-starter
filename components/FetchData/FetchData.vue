@@ -24,6 +24,7 @@ const onClick = async () => {
     <button data-testid="api-button" @click="onClick">Click</button>
 
     <p data-testid="data-id">{{ data?.id }}</p>
-    <pre>{{ data }}</pre>
+
+    <pre class="max-w-[100vw-20rem] overflow-scroll">{{ data }}</pre>
   </div>
 </template>
