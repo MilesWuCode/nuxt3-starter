@@ -161,3 +161,23 @@ npx vitest --coverage
   ```sh
   npm i @nuxtjs/svg-sprite
   ```
+
+## drizzle
+
+```sh
+# mysql
+docker run --name mysql -p 3306:3306 \
+-e MYSQL_ROOT_PASSWORD=password \
+-e MYSQL_DATABASE=demo \
+--restart unless-stopped \
+-d mysql:latest
+
+# schema to sql
+npx drizzle-kit generate --name 'first'
+
+# migrate to DB
+npx tsx ./server/database/drizzle/migrate.ts
+
+# studio
+npx drizzle-kit studio
+```
