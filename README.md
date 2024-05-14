@@ -178,6 +178,6 @@ npx drizzle-kit generate --name 'first'
 # migrate to DB
 npx tsx ./server/database/drizzle/migrate.ts
 
-# studio
+# drizzle studio
 npx drizzle-kit studio
 ```

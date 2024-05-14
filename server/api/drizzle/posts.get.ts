@@ -1,4 +1,4 @@
-import { db } from '~/server/database/drizzle/db'
+import { db } from '~/database/drizzle/db'
 
 export default defineEventHandler(async (event) => {
   const data = await db.query.posts.findMany()
