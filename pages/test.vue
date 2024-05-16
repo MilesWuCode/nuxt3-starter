@@ -7,10 +7,5 @@
     <Increase />
 
     <FetchData :id="123" />
-
-    <!-- example -->
-    <ErrorBoundary>
-      <CreateError />
-    </ErrorBoundary>
   </div>
 </template>

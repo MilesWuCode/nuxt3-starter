@@ -13,9 +13,7 @@ useSeoMeta({
 
 <template>
   <div>
-    <a id="Drizzle" class="block scroll-mt-[68px] text-3xl" href="#Drizzle">
-      Drizzle
-    </a>
+    <Anchor id="Drizzle">Drizzle</Anchor>
 
     <p v-for="post in posts?.data" :key="post.id">
       {{ post.id + ' ' + post.name }}

@@ -2,9 +2,7 @@
 
 <template>
   <div>
-    <a id="Index" class="block scroll-mt-[68px] text-3xl" href="#Index">
-      Index
-    </a>
+    <Anchor id="Index">Index</Anchor>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const onClick = () => {
-  throw Error
+  throw Error('has error...')
 }
 </script>
 

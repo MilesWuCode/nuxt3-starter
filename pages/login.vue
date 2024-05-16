@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <h1>Login</h1>
+    <Anchor id="Login">Login</Anchor>
   </div>
 </template>
 

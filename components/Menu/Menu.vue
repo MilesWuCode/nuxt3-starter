@@ -1,41 +1,36 @@
+<script setup lang="ts">
+const links = [
+  {
+    label: 'Index',
+    to: '/',
+  },
+  {
+    label: 'Login',
+    to: '/login',
+  },
+  {
+    label: 'Drizzle',
+    to: '/drizzle',
+  },
+  {
+    label: 'SVG Sprite',
+    to: '/svg-sprite',
+  },
+  {
+    label: 'Nuxt Error Boundary',
+    to: '/nuxt-error-boundary',
+  },
+  {
+    label: 'Test',
+    to: '/test',
+  },
+]
+</script>
+
 <template>
-  <ul class="menu bg-base-200 p-4 text-base-content">
-    <!-- Sidebar content here -->
-    <li><a>Sidebar Item 1</a></li>
-    <li><a>Sidebar Item 2</a></li>
-    <li><a>Sidebar Item 3</a></li>
-    <li><a>Sidebar Item 4</a></li>
-    <li><a>Sidebar Item 5</a></li>
-    <li><a>Sidebar Item 6</a></li>
-    <li><a>Sidebar Item 7</a></li>
-    <li><a>Sidebar Item 8</a></li>
-    <li><a>Sidebar Item 9</a></li>
-    <li><a>Sidebar Item 10</a></li>
-    <li><a>Sidebar Item 11</a></li>
-    <li><a>Sidebar Item 12</a></li>
-    <li><a>Sidebar Item 1</a></li>
-    <li><a>Sidebar Item 2</a></li>
-    <li><a>Sidebar Item 3</a></li>
-    <li><a>Sidebar Item 4</a></li>
-    <li><a>Sidebar Item 5</a></li>
-    <li><a>Sidebar Item 6</a></li>
-    <li><a>Sidebar Item 7</a></li>
-    <li><a>Sidebar Item 8</a></li>
-    <li><a>Sidebar Item 9</a></li>
-    <li><a>Sidebar Item 10</a></li>
-    <li><a>Sidebar Item 11</a></li>
-    <li><a>Sidebar Item 12</a></li>
-    <li><a>Sidebar Item 1</a></li>
-    <li><a>Sidebar Item 2</a></li>
-    <li><a>Sidebar Item 3</a></li>
-    <li><a>Sidebar Item 4</a></li>
-    <li><a>Sidebar Item 5</a></li>
-    <li><a>Sidebar Item 6</a></li>
-    <li><a>Sidebar Item 7</a></li>
-    <li><a>Sidebar Item 8</a></li>
-    <li><a>Sidebar Item 9</a></li>
-    <li><a>Sidebar Item 10</a></li>
-    <li><a>Sidebar Item 11</a></li>
-    <li><a>Sidebar Item 12</a></li>
+  <ul class="menu p-4">
+    <li v-for="(link, i) in links" :key="i">
+      <NuxtLink :to="link.to">{{ link.label }}</NuxtLink>
+    </li>
   </ul>
 </template>
