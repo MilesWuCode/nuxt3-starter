@@ -1,4 +1,4 @@
-import { db } from '~/database/drizzle/db'
+import { db, useDB } from '~/database/drizzle/db'
 import { posts } from '~/database/drizzle/schema'
 import { and, asc, desc, eq, or } from 'drizzle-orm'
 

@@ -1,6 +1,10 @@
 declare module 'nuxt/schema' {
   interface RuntimeConfig {
     apiSecret: string
+    dbHost: string
+    dbUser: string
+    dbPassword: string
+    dbName: string
   }
   interface PublicRuntimeConfig {
     apiBase: string
