@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Nuxt Error Boundary',
+})
+</script>
 
 <template>
   <div>

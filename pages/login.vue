@@ -1,4 +1,8 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+useSeoMeta({
+  title: 'Login',
+})
+</script>
 
 <template>
   <div>
