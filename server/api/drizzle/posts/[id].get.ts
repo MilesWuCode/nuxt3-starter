@@ -1,4 +1,4 @@
-import { db, useDB } from '~/database/drizzle/db'
+import { useDB } from '~/database/drizzle/db'
 import { posts } from '~/database/drizzle/schema'
 import { and, asc, desc, eq, or } from 'drizzle-orm'
 
@@ -12,7 +12,7 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  const data = await db.query.posts.findFirst({ where: eq(posts.id, id) })
+  const data = await useDB().query.posts.findFirst({ where: eq(posts.id, id) })
 
   if (!data) {
     setResponseStatus(event, 404)

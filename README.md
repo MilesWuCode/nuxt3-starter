@@ -176,7 +176,7 @@ docker run --name mysql -p 3306:3306 \
 npx drizzle-kit generate --name 'first'
 
 # migrate to DB
-npx tsx ./server/database/drizzle/migrate.ts
+npx tsx ./database/drizzle/migrate.ts
 
 # drizzle studio
 npx drizzle-kit studio
