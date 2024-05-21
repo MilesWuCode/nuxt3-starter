@@ -181,3 +181,9 @@ npx tsx ./database/drizzle/migrate.ts
 # drizzle studio
 npx drizzle-kit studio
 ```
+
+## validation
+
+```sh
+npm i vee-validate zod @vee-validate/zod
+```

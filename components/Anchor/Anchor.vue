@@ -3,7 +3,12 @@ const props = defineProps({
   id: { type: String, required: true },
 })
 
-const id = props.id.trim().replace(/\s+/g, '-').toLowerCase()
+// kebabCase
+const id = props.id
+  .trim()
+  .replace(/([a-z])([A-Z])/g, '$1-$2')
+  .replace(/[\s_]+/g, '-')
+  .toLowerCase()
 </script>
 
 <template>

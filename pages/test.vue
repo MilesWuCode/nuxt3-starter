@@ -6,10 +6,22 @@ useSeoMeta({
 
 <template>
   <div>
-    <a id="test" class="block scroll-mt-[68px] text-3xl" href="#test">Test</a>
+    <Anchor id="Test">Test</Anchor>
 
     <Increase />
 
     <FetchData :id="123" />
+
+    <Menu />
+    <Menu />
+    <Menu />
+    <Menu />
+    <Anchor id="Test2">Test2</Anchor>
+    <Menu />
+    <Menu />
+    <Menu />
+    <Menu />
+    <Menu />
+    <Menu />
   </div>
 </template>

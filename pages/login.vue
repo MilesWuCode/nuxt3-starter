@@ -7,6 +7,8 @@ useSeoMeta({
 <template>
   <div>
     <Anchor id="Login">Login</Anchor>
+
+    <Login class="mx-auto" />
   </div>
 </template>
 
