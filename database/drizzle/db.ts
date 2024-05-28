@@ -21,16 +21,10 @@ export function useDB() {
   const { dbHost, dbUser, dbPassword, dbName } = useRuntimeConfig()
 
   const connection = mysql.createPool({
-    // mode: 'default'
     host: dbHost,
     user: dbUser,
     password: dbPassword,
     database: dbName,
-    multipleStatements: true,
-
-    // mode: 'planetscale'
-    // uri: process.env.PLANETSCALE_DATABASE_URL,
-    // uri: 'mysql://root:password@localhost:3306/demo',
   })
 
   return drizzle(connection, { schema, mode: 'default' })

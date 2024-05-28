@@ -10,4 +10,4 @@ useSeoMeta({
   </div>
 </template>
 
-<style scoped></style>
+<style lang="postcss" scoped></style>

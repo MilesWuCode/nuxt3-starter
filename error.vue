@@ -6,5 +6,6 @@ const error = useError()
   <NuxtLayout>
     <h1>Error</h1>
     <p>{{ error?.statusCode }}</p>
+    <p>{{ error?.statusMessage }}</p>
   </NuxtLayout>
 </template>
