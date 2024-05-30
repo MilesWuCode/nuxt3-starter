@@ -8,6 +8,8 @@ export default defineNuxtConfig({
     '@nuxtjs/svg-sprite',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
+    '@zadigetvoltaire/nuxt-gtm',
+    'nuxt-gtag',
   ],
 
   runtimeConfig: {
@@ -34,5 +36,15 @@ export default defineNuxtConfig({
   tailwindcss: {
     // https://tailwindcss.nuxtjs.org/getting-started/configuration
     editorSupport: true,
+  },
+
+  gtm: {
+    id: process.env.GTM_ID || 'GTM-XXXXXXXX',
+    enabled: process.env.GTM_ID ? true : false,
+  },
+
+  gtag: {
+    id: process.env.GTAG_ID,
+    enabled: process.env.GTAG_ID ? true : false,
   },
 })
