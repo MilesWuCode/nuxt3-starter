@@ -24,17 +24,18 @@ const onSubmit = handleSubmit((values) => {
 
 <template>
   <div class="w-full max-w-xs">
-    <form @submit="onSubmit" class="space-y-4">
+    <form class="space-y-4" @submit="onSubmit">
       <!-- Email -->
       <label class="form-control" :class="{ 'label-error': errors.email }">
         <div class="label">
           <span class="label-text">Email</span>
         </div>
         <input
+          v-model="email"
           type="text"
           placeholder="Your email"
           class="input input-bordered"
-          v-model="email"
+          autocomplete="email"
         />
         <div class="label">
           <span class="label-text-alt">{{ errors.email }}</span>
@@ -47,10 +48,11 @@ const onSubmit = handleSubmit((values) => {
           <span class="label-text">Password</span>
         </div>
         <input
+          v-model="password"
           type="password"
           placeholder="********"
           class="input input-bordered"
-          v-model="password"
+          autocomplete="current-password"
         />
         <div class="label">
           <span class="label-text-alt">{{ errors.password }}</span>
