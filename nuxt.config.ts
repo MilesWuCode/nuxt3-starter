@@ -5,13 +5,13 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-07-01',
 
   modules: [
-    '@nuxt/eslint',
-    '@nuxt/test-utils/module',
-    '@nuxtjs/svg-sprite',
-    '@nuxtjs/tailwindcss',
-    '@pinia/nuxt',
-    '@zadigetvoltaire/nuxt-gtm',
+    'nuxt-svgo-loader',
     'nuxt-gtag',
+    '@zadigetvoltaire/nuxt-gtm',
+    '@pinia/nuxt',
+    '@nuxtjs/tailwindcss',
+    '@nuxt/test-utils/module',
+    '@nuxt/eslint',
   ],
 
   runtimeConfig: {

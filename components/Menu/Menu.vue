@@ -13,8 +13,8 @@ const links = [
     to: '/drizzle',
   },
   {
-    label: 'SVG Sprite',
-    to: '/svg-sprite',
+    label: 'SVG',
+    to: '/svg',
   },
   {
     label: 'Nuxt Error Boundary',
