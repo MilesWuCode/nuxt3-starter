@@ -157,9 +157,9 @@ npx vitest --coverage
 
 ## svg
 
-- @nuxtjs/svg-sprite
+- nuxt-svgo-loader
   ```sh
-  npm i @nuxtjs/svg-sprite
+  npm i nuxt-svgo-loader
   ```
 
 ## drizzle
