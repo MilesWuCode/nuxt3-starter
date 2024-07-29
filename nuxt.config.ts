@@ -4,13 +4,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    'nuxt-svgo-loader',
-    'nuxt-gtag',
-    '@zadigetvoltaire/nuxt-gtm',
-    '@pinia/nuxt',
-    '@nuxtjs/tailwindcss',
-    '@nuxt/test-utils/module',
     '@nuxt/eslint',
+    '@nuxt/test-utils/module',
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
+    '@zadigetvoltaire/nuxt-gtm',
+    'nuxt-gtag',
+    'nuxt-svgo-loader',
   ],
 
   runtimeConfig: {
