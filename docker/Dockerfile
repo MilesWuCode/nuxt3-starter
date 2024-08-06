@@ -1,13 +1,13 @@
 ARG NODE_VERSION=22
 
-FROM node:${NODE_VERSION}-slim as base
+FROM node:${NODE_VERSION}-slim AS base
 
 ARG ENV=local.env
 
 WORKDIR /app
 
 # Build
-FROM base as build
+FROM base AS build
 
 COPY package.json package-lock.json ./
 
