@@ -7,8 +7,6 @@
   "editor.quickSuggestions": {
     "strings": true
   },
-  // https://ui.nuxt.com/getting-started/installation#intellisense
-  // "tailwindCSS.experimental.configFile": "tailwind.config.ts",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
