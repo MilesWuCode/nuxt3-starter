@@ -125,6 +125,7 @@ npx nuxi add page index
 ```sh
 # update nuxt
 npx nuxi upgrade
+npx nuxi@latest upgrade --force
 
 # update package
 npm update
