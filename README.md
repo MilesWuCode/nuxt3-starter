@@ -188,3 +188,7 @@ npx drizzle-kit studio
 ```sh
 npm i vee-validate zod @vee-validate/zod
 ```
+
+# 觀望中
+
+- https://es-toolkit.slash.page
